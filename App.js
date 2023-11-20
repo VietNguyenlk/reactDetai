@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import first from './screens/first'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
+import Caybutthanky  from './pages/Caybutthanky';
 
 const Stack = createNativeStackNavigator();
-function LoginScreen({ navigation }) {
+function LoginScreen({navigation}) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -14,6 +18,7 @@ function LoginScreen({ navigation }) {
     if (!username || !password) {
       setError('Vui lòng điền đầy đủ thông tin đăng nhập.');
     } else {
+      navigation.navigate('first')
       // Thực hiện xác thực đăng nhập ở đây
       // Nếu xác thực thành công, bạn có thể điều hướng đến màn hình khác bằng `navigation.navigate`
       // Ví dụ: navigation.navigate('Home');
@@ -71,6 +76,15 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={LoginScreen} options={{headerShown:false}}/>
         {/* Các màn hình khác nếu cần */}
+        <Stack.Screen options={{headerTitle:'NGUYỄN VĂN VIỆT', headerStyle : { backgroundColor :'#0066FF'},
+          headerRight : ()=>{
+            <FontAwesome5 name="search" size={24} color="white" style={{ marginRight: 10 }} />
+            
+          }
+      
+      }} name='first' component={first}/>
+
+      <Stack.Screen options={{headerTitle:'Cây bút thần kỳ'}} name='Caybutthanky' component={Caybutthanky} />
       </Stack.Navigator>
     </NavigationContainer>
   );
