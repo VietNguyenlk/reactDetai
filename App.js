@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import Caybutthanky  from './pages/Caybutthanky';
+import Bannang from './pages/Bannang';
 
 const Stack = createNativeStackNavigator();
 function LoginScreen({navigation}) {
@@ -85,6 +86,7 @@ function App() {
       }} name='first' component={first}/>
 
       <Stack.Screen options={{headerTitle:'Cây bút thần kỳ'}} name='Caybutthanky' component={Caybutthanky} />
+      <Stack.Screen options={{headerTitle:'Bản năng'}} name='Bannang' component={Bannang} />
       </Stack.Navigator>
     </NavigationContainer>
   );
