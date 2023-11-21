@@ -8,6 +8,12 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import Caybutthanky  from './pages/Caybutthanky';
 import Bannang from './pages/Bannang';
+import Trangchu from './pages/trangchu';
+import Tintuc from './pages/Tintuc';
+import Chat from './pages/chat'
+import Danhba  from './pages/danhba';
+import Khac from './pages/khac';
+import Call from './pages/call';
 
 const Stack = createNativeStackNavigator();
 function LoginScreen({navigation}) {
@@ -87,6 +93,12 @@ function App() {
 
       <Stack.Screen options={{headerTitle:'Cây bút thần kỳ'}} name='Caybutthanky' component={Caybutthanky} />
       <Stack.Screen options={{headerTitle:'Bản năng'}} name='Bannang' component={Bannang} />
+      <Stack.Screen options={{headerTitle:'Trang Chủ',headerShown:false}} name='Trangchu' component={Trangchu} />
+      <Stack.Screen options={{headerTitle:'Tintuc',headerShown:false}} name='Tintuc' component={Tintuc} />
+      <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Chat' component={Chat} />
+      <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Danhba' component={Danhba} />
+      <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Call' component={Call} />
+      <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Khac' component={Khac} />
       </Stack.Navigator>
     </NavigationContainer>
   );

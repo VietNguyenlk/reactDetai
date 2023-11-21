@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Image, SafeAreaView, FlatList } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Image, SafeAreaView, FlatList, TouchableOpacity } from 'react-native';
 
 
 const DATA = [
@@ -21,7 +21,7 @@ const Item = ({img,title}) => (
   </View>
 );
 
-export default function FirstPage(){
+export default function FirstPage({navigation}){
    
     return(
         <SafeAreaView style={styles.container} >
@@ -33,6 +33,29 @@ export default function FirstPage(){
             
             
             />
+           
+           <View style={{display:'flex',flexDirection:'row',justifyContent: 'space-evenly'}}> 
+              <TouchableOpacity onPress={()=>navigation.navigate('Trangchu')} style={{marginRight:25,alignItems:'center'}}>
+                <Image style={{width:25,height:25,}} source={require('../assets/Vector.png')}/>
+                <Text>Trang chủ</Text>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={()=>navigation.navigate('Chat')} style={{marginRight:25,marginLeft:25,alignItems:'center'}}>
+                <Image style={{width:25,height:25}} source={require('../assets/chat 1.png')}/>
+                <Text>Chat</Text>
+{/* 
+                chua co thanh toan */}
+              </TouchableOpacity>
+              <TouchableOpacity  style={{marginRight:25,marginLeft:25,alignItems:'center'}}> 
+                <Image style={{width:25,height:25}} source={require('../assets/credit-card 1.png')}/>
+                <Text>Thanh toán</Text>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={()=>navigation.navigate('Khac')}  style={{marginLeft:25,alignItems:'center'}}>
+                <Image style={{width:25,height:25}} source={require('../assets/apps-alt 1.png')}/>
+                <Text>Khác</Text>
+              </TouchableOpacity>
+              
+             
+          </View>
            
           
         </SafeAreaView>
