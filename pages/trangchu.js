@@ -67,11 +67,11 @@ export default function Trangchu({navigation}){
                 <Image style={{width:"100%",height:200}} source={require('../assets/hinhtrangchu2.png')}/>
             </ScrollView>
             <View style={{display:'flex',flexDirection:'row',justifyContent: 'space-evenly',marginTop:10}}> 
-              <TouchableOpacity style={{marginRight:25,alignItems:'center'}}>
+              <TouchableOpacity  style={{marginRight:25,alignItems:'center'}}>
                 <Image style={{width:25,height:25,}} source={require('../assets/Vector.png')}/>
                 <Text>Trang chủ</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={{marginRight:25,marginLeft:25,alignItems:'center'}}>
+              </TouchableOpacity >
+              <TouchableOpacity onPress={()=>navigation.navigate('Chat')} style={{marginRight:25,marginLeft:25,alignItems:'center'}}>
                 <Image style={{width:25,height:25}} source={require('../assets/chat 1.png')}/>
                 <Text>Chat</Text>
               </TouchableOpacity>
@@ -79,7 +79,7 @@ export default function Trangchu({navigation}){
                 <Image style={{width:25,height:25}} source={require('../assets/credit-card 1.png')}/>
                 <Text>Thanh toán</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={{marginLeft:25,alignItems:'center'}}>
+              <TouchableOpacity onPress={()=>navigation.navigate('Khac')} style={{marginLeft:25,alignItems:'center'}}>
                 <Image style={{width:25,height:25}} source={require('../assets/apps-alt 1.png')}/>
                 <Text>Khác</Text>
               </TouchableOpacity>
