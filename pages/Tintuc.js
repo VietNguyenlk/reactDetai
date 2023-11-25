@@ -42,10 +42,9 @@ export default function FirstPage({navigation}){
               <TouchableOpacity onPress={()=>navigation.navigate('Chat')} style={{marginRight:25,marginLeft:25,alignItems:'center'}}>
                 <Image style={{width:25,height:25}} source={require('../assets/chat 1.png')}/>
                 <Text>Chat</Text>
-{/* 
-                chua co thanh toan */}
+
               </TouchableOpacity>
-              <TouchableOpacity  style={{marginRight:25,marginLeft:25,alignItems:'center'}}> 
+              <TouchableOpacity onPress={()=>navigation.navigate('Thanhtoan')}  style={{marginRight:25,marginLeft:25,alignItems:'center'}}> 
                 <Image style={{width:25,height:25}} source={require('../assets/credit-card 1.png')}/>
                 <Text>Thanh toán</Text>
               </TouchableOpacity>

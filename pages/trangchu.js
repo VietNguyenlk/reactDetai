@@ -16,27 +16,27 @@ export default function Trangchu({navigation}){
    
     return(
         <View style={styles.container}>
-            <View style={{backgroundColor:'pink',height:60,display:'flex',flexDirection:'row'}}>
+            <View style={{backgroundColor:'#0066FF',height:60,display:'flex',flexDirection:'row'}}>
                 <Image style={{width:30,height:30,marginTop:13,marginLeft:10}} source={require('../assets/acc.png')}/>
                 <Text style={{fontSize:20,color:'white',marginTop:13,marginLeft:10}}>Trương Tuấn Kiệt</Text>
                 <Image style={{width:30,height:30,marginTop:13,marginLeft:100}} source={require('../assets/kinh.png')}/>
                 <Image style={{width:30,height:30,marginTop:13,marginLeft:10}} source={require('../assets/chuong.png')}/>
             </View>
-            <View style={{marginTop:20, height:50,width:'100%',display:'flex',flexDirection:"row",justifyContent:"space-around"}}>
+            <View style={{backgroundColor:'gray' , height:60,width:'100%',display:'flex',flexDirection:"row",justifyContent:"space-around",alignItems:'center'}}>
                 <TouchableOpacity onPress={()=>navigation.navigate('first')}>
-                    <Text style={{color:'gray'}}>Tin tức</Text>
+                    <Text style={{color:'white'}} >Tin tức</Text>
                 </TouchableOpacity >
                 <TouchableOpacity onPress={()=>navigation.navigate('first')} >
-                    <Text style={{color:'gray'}}>Học tập</Text>
+                    <Text  style={{color:'white'}} >Học tập</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={()=>navigation.navigate('first')}>
-                    <Text style={{color:'gray'}}>Giải trí</Text>
+                    <Text style={{color:'white'}} >Giải trí</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={()=>navigation.navigate('first')}>
-                    <Text style={{color:'gray'}}>Đại hội</Text>
+                    <Text style={{color:'white'}} >Đại hội</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={()=>navigation.navigate('first')}>
-                    <Text style={{color:'gray'}}>Thư viện</Text>
+                    <Text style={{color:'white'}}  >Thư viện</Text>
                 </TouchableOpacity>
             </View>
             <ScrollView style={{height:100}}>
@@ -75,7 +75,7 @@ export default function Trangchu({navigation}){
                 <Image style={{width:25,height:25}} source={require('../assets/chat 1.png')}/>
                 <Text>Chat</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={{marginRight:25,marginLeft:25,alignItems:'center'}}> 
+              <TouchableOpacity onPress={()=>navigation.navigate('Thanhtoan')} style={{marginRight:25,marginLeft:25,alignItems:'center'}}> 
                 <Image style={{width:25,height:25}} source={require('../assets/credit-card 1.png')}/>
                 <Text>Thanh toán</Text>
               </TouchableOpacity>
