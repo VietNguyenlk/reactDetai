@@ -11,29 +11,29 @@ import Giaitri from '../pages/Giaitri';
 import Audiobook from '../pages/Audiobook';
 import Thuvien from '../pages/Thuvien';
 
-export default function Khac(){
+export default function Khac({navigation}){
    
     return(
         <View style={styles.container}>
-            <View style={{backgroundColor:'blue',height:60,display:'flex',flexDirection:'row'}}>
+            {/* <View style={{height:60,display:'flex',flexDirection:'row'}}>
             <Image style={{width:25,height:25,margin:15}} source={require('../assets/muiten.png')}/>
             <Text style={{fontSize:30,color:'white',marginTop:5,marginLeft:100}}>Khác</Text>
-            </View>
-            <View style={{paddingTop:18, height:50,width:'100%',display:'flex',flexDirection:"row",justifyContent:"space-around",backgroundColor:'white'}}>
-                <TouchableOpacity>
-                    <Text style={{color:'gray'}}>Tin tức</Text>
+            </View> */}
+            <View style={{ alignItems:'center',height:60,width:'100%',display:'flex',flexDirection:"row",justifyContent:"space-around",backgroundColor:'gray'}}>
+                <TouchableOpacity  onPress={()=>navigation.navigate('first')}>
+                    <Text style={{color:'white'}}>Tin tức</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
-                    <Text style={{color:'gray'}}>Học tập</Text>
+                <TouchableOpacity  onPress={()=>navigation.navigate('first')}>
+                    <Text style={{color:'white'}}>Học tập</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
-                    <Text style={{color:'gray'}}>Giải trí</Text>
+                <TouchableOpacity  onPress={()=>navigation.navigate('first')}>
+                    <Text style={{color:'white'}}>Giải trí</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
-                    <Text style={{color:'gray'}}>Đại hội</Text>
+                <TouchableOpacity  onPress={()=>navigation.navigate('first')}>
+                    <Text style={{color:'white'}}>Đại hội</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
-                    <Text style={{color:'gray'}}>Thư viện</Text>
+                <TouchableOpacity  onPress={()=>navigation.navigate('first')}>
+                    <Text style={{color:'white'}}>Thư viện</Text>
                 </TouchableOpacity>
             </View>
             <View style={{height:50,backgroundColor:'white',paddingTop:10,marginTop:5}}>
