@@ -14,6 +14,7 @@ import Chat from './pages/chat'
 import Danhba  from './pages/danhba';
 import Khac from './pages/khac';
 import Call from './pages/call';
+import Thanhtoan from './pages/thanhtoan';
 
 const Stack = createNativeStackNavigator();
 function LoginScreen({navigation}) {
@@ -98,7 +99,8 @@ function App() {
       <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Chat' component={Chat} />
       <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Danhba' component={Danhba} />
       <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Call' component={Call} />
-      <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Khac' component={Khac} />
+      <Stack.Screen options={{headerTitle:'Khác',headerShown:true,headerStyle:{backgroundColor:'#0066FF'}}} name='Khac' component={Khac} />
+      <Stack.Screen options={{headerTitle:'Khác',headerShown:false}} name='Thanhtoan' component={Thanhtoan} />
       </Stack.Navigator>
     </NavigationContainer>
   );
