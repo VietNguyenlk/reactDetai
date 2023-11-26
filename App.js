@@ -15,6 +15,9 @@ import Danhba  from './pages/danhba';
 import Khac from './pages/khac';
 import Call from './pages/call';
 import Thanhtoan from './pages/thanhtoan';
+import Canphongkhoa from './pages/Canphongkhoa';
+import Khongnoinuongtua from './pages/Khongnoinuongtua';
+import Connhangheo from './pages/Connhangheo';
 
 const Stack = createNativeStackNavigator();
 function LoginScreen({navigation}) {
@@ -92,8 +95,11 @@ function App() {
       
       }} name='first' component={first}/>
 
-      <Stack.Screen options={{headerTitle:'Cây bút thần kỳ'}} name='Caybutthanky' component={Caybutthanky} />
-      <Stack.Screen options={{headerTitle:'Bản năng'}} name='Bannang' component={Bannang} />
+<Stack.Screen options={{headerTitle:'Con nhà nghèo',headerStyle:{backgroundColor:'#333333'},headerTitleStyle:{color:'#DDDDDD'}}} name='Connhangheo' component={Connhangheo} />   
+<Stack.Screen options={{headerTitle:'Không nơi nương tựa',headerStyle:{backgroundColor:'#333333'},headerTitleStyle:{color:'#DDDDDD'}}} name='Khongnoinuongtua' component={Khongnoinuongtua} />
+      <Stack.Screen options={{headerTitle:'Căn phòng khóa',headerStyle:{backgroundColor:'#333333'},headerTitleStyle:{color:'#DDDDDD'}}} name='Canphongkhoa' component={Canphongkhoa} />
+      <Stack.Screen options={{headerTitle:'Cây bút thần kỳ',headerStyle:{backgroundColor:'#333333'},headerTitleStyle:{color:'#DDDDDD'}}} name='Caybutthanky' component={Caybutthanky} />
+      <Stack.Screen options={{headerTitle:'Bản năng',headerStyle:{backgroundColor:'#333333'},headerTitleStyle:{color:'#DDDDDD'}}} name='Bannang' component={Bannang} />
       <Stack.Screen options={{headerTitle:'Trang Chủ',headerShown:false}} name='Trangchu' component={Trangchu} />
       <Stack.Screen options={{headerTitle:'Tintuc',headerShown:false}} name='Tintuc' component={Tintuc} />
       <Stack.Screen options={{headerTitle:'Chat',headerShown:false}} name='Chat' component={Chat} />
