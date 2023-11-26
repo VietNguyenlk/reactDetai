@@ -7,7 +7,7 @@ export default function Caybutthanky(){
 
             <View style ={{flexDirection :'row'}} >
             <Image source={require('../assets/sach.jpg')}  style={{width:150,height:150}}  />
-            <Text style={{fontSize:18,marginLeft:15}}>Cây bút thần kì</Text>
+            <Text style={{fontSize:18,marginLeft:15,fontWeight:'bold'}}>Cây bút thần kì</Text>
             <Text style={{marginTop:30,marginLeft:-120}}>10.3k lượt nghe</Text>
             <Pressable style={{justifyContent:'center',alignItems:'center',width:100,borderRadius:20,marginTop:70,marginLeft:-100,backgroundColor:'#3399FF',height:30}}>Phát tất cả</Pressable>
             <Pressable style={{justifyContent:'center',alignItems:'center',width:100,borderRadius:20,marginTop:70,marginLeft:20,backgroundColor:'#CCCCCC',height:30}}>Nghe Thử</Pressable>

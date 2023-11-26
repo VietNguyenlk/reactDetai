@@ -5,9 +5,9 @@ const DATA = [
 
     {id:1, img:require('../assets/sach.jpg'), name:'Cây bút thần kì', screenName: 'Caybutthanky'},
     {id:2, img:require('../assets/sach.jpg'),name:'Bản năng', screenName: 'Bannang'},
-    {id:3, img:require('../assets/sach.jpg'),name:'Căn phòng khóa', screenName: 'Caybutthanky'},
-    {id:4, img:require('../assets/sach.jpg'),name:'Không nơi nương tựa', screenName: 'Caybutthanky'},
-    {id:5, img:require('../assets/sach.jpg'),name:'Con nhà nghèo', screenName: 'Caybutthanky'},
+    {id:3, img:require('../assets/sach.jpg'),name:'Căn phòng khóa', screenName: 'Canphongkhoa'},
+    {id:4, img:require('../assets/sach.jpg'),name:'Không nơi nương tựa', screenName: 'Khongnoinuongtua'},
+    {id:5, img:require('../assets/sach.jpg'),name:'Con nhà nghèo', screenName: 'Connhangheo'},
 ]
 
 const Item = ({img,title,navigation,screenName}) => (
